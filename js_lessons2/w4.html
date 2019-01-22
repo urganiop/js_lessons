@@ -8,23 +8,18 @@
 <script>
     'use strict';
 
-    function mySum(arg1, arg2){
-        return arg1 + arg2;
+    let count = 0;
+    for (let i = 0; i <= 100; i++) {
+        count = 0;
+        for (let k = 2; k <= i; k++) {
+            if (i % k === 0) {
+                count++;
+            }
+        }
+        if (count === 1) {
+            console.log(i);
+        }
     }
-    function mySubtraction(arg1, arg2){
-        return arg1 - arg2;
-    }
-    function myDivision(arg1, arg2){
-        return arg1 / arg2;
-    }
-    function myMultiplication(arg1, arg2){
-        return arg1 * arg2;
-    }
-
-    alert(`Результат сложения 3 и 2 : ${mySum(3,2)}`);
-    alert(`Результат вычитания 3 и 2 : ${mySubtraction(3,2)}`);
-    alert(`Результат деления 3 и 2 : ${myDivision(3,2)}`);
-    alert(`Результат умножения 3 и 2 : ${myMultiplication(3,2)}`);
 
 </script>
 </body>

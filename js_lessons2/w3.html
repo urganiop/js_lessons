@@ -8,15 +8,11 @@
 <script>
     'use strict';
 
-    let a = +prompt('введите a');
-    let b = +prompt('введите b');
-    if (a >= 0 && b >= 0){
-        alert(`разность равна ${a - b}`)
-    }else if (a < 0 && b < 0){
-        alert(`произведение равно ${a * b}`)
-    }else {
-        alert(`сумма равна ${a + b}`)
-    }
+    let sent = 'x';
+   for (let i = 1; i <= 20; i++){
+       sent = sent + 'x';
+       console.log(sent);
+   }
 
 </script>
 </body>
