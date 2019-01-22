@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+
+    let i = 0;
+    let word = null;
+    do {
+        if (i  === 0) {
+            word = 'это ноль';
+        } else if (i % 2 === 0) {
+            word = 'чентное число'
+        } else {
+            word = 'нечентное число'
+        }
+        alert(`${i++} - ${word}`)
+    } while (i <= 10);
+
+</script>
+</body>
+</html>

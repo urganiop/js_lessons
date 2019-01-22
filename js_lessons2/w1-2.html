@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+
+    let number = {
+        firstDigit: 0,
+        secondDigit: 0,
+        thirdDigit: 0
+    };
+
+    function numberToObject(my_number, numberFromPrompt) {
+        number.firstDigit += numberFromPrompt % 10;
+        number.secondDigit += parseInt(numberFromPrompt / 10) % 10;
+        number.thirdDigit +=  parseInt(numberFromPrompt / 100);
+    }
+
+    let promptNumber = +prompt('Введите число для обработки');
+    if (!isNaN(promptNumber)) {
+        numberToObject(number, promptNumber);
+        console.log(number);
+    } else {
+        alert('Введите нормальное число')
+    }
+
+</script>
+</body>
+</html>
